@@ -1,5 +1,44 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100vh;
+  background-color: #1852ff;
+
+}
+
+.navbar {
+  height: 10vh;
+}
+
+.withdraw,
+.deposit {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+  align-items: center;
+  /* border: 2px solid black; */
+  /* color: orangered; */
+  height: 80vh;
+}
+
+.withdraw form,
+.deposit form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.withdraw input,
+.deposit input {
+  padding: 0.6rem;
+  outline: 1px solid black;
+  border-radius: 10px;
+  width: 25vw;
 }
 
 .App-logo {
@@ -32,6 +71,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
